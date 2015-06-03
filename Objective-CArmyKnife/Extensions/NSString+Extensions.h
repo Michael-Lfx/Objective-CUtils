@@ -74,3 +74,33 @@
 - (NSString*)reverse;
 
 @end
+
+
+@interface NSString (Palindrome)
+
+/**
+ - (BOOL)isPalindrome
+ 判断字符串是否为回文串。Determines whether this string is a palindrome.
+ 
+ Example:
+ [@"HANNAH" isPalindrome]; // returns YES
+ [@"CLAUDE" isPalindrome]; // returns NO
+ 
+ Returns a BOOL corresponding to this NSString's palindrome status.
+ */
+- (BOOL)isPalindrome;
+
+/**
+ + (BOOL)stringIsPalindrome:
+ 判断字符串是否为回文串。Deterines if a provided NSString is a palindrome.
+ 
+ aString - The NSString to be tested.
+ 
+ Example:
+ [NSString stringIsPalindrome:@"RADAR"]; // return YES
+ 
+ Returns a BOOL cooresponding to the NSString palindrome status.
+ */
++ (BOOL)stringIsPalindrome:(NSString*)aString;
+
+@end
