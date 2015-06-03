@@ -34,7 +34,7 @@
 
 @interface NSString (Bundle)
 
-+ (NSString *)stringFromMainBundleFilename:(NSString *)filename;
++ (NSString *)stringFromMainBundleWithFilename:(NSString *)filename;
 
 @end
 

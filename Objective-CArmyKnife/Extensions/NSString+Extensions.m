@@ -197,7 +197,7 @@ static char base64EncodingTable[64] = {
 
 @implementation NSString (Bundle)
 
-+ (NSString *)stringFromMainBundleFilename:(NSString *)filename {
++ (NSString *)stringFromMainBundleWithFilename:(NSString *)filename {
     NSString *path = [[NSBundle mainBundle] pathForResource:filename ofType:nil];
     NSString *text = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     return text;
