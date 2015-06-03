@@ -77,13 +77,15 @@ static char base64EncodingTable[64] = {
 
 #pragma mark - UIColor
 
-//@implementation NSString (Color)
-//
-//- (UIColor *)color {
-//    return [UIColor colorWithHexString:self];
-//}
-//
-//@end
+#import "UIColor+Extensions.h"
+
+@implementation NSString (Color)
+
+- (UIColor *)color {
+    return [UIColor colorWithHexString:self];
+}
+
+@end
 
 #pragma mark - 正则
 // 整合自 https://github.com/carlbrown/RegexOnNSString
@@ -177,8 +179,8 @@ static char base64EncodingTable[64] = {
 
 #pragma mark - AES加解密
 
-//@implementation NSString (AES)
-//
+@implementation NSString (AES)
+
 //+ (NSString *)encrypt:(NSString *)message password:(NSString *)password {
 //    NSData *encryptedData = [[message dataUsingEncoding:NSUTF8StringEncoding] AES256EncryptedDataUsingKey:[[password dataUsingEncoding:NSUTF8StringEncoding] SHA256Hash] error:nil];
 //    NSString *base64EncodedString = [NSString base64StringFromData:encryptedData length:[encryptedData length]];
@@ -190,8 +192,8 @@ static char base64EncodingTable[64] = {
 //    NSData *decryptedData = [encryptedData decryptedAES256DataUsingKey:[[password dataUsingEncoding:NSUTF8StringEncoding] SHA256Hash] error:nil];
 //    return [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
 //}
-//
-//@end
+
+@end
 
 #pragma mark - NSBundle
 
