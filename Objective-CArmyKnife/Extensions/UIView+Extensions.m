@@ -44,6 +44,25 @@
 
 @end
 
+
+#pragma mark - CALayer特性实现特殊效果
+
+// 整合自：https://gist.github.com/bobmoff/5967220
+
+@implementation UIView (CALayer)
+
+- (void)setRoundedCorners:(UIRectCorner)corners radius:(CGSize)size {
+    UIBezierPath* maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:size];
+    
+    CAShapeLayer* maskLayer = [CAShapeLayer new];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    
+    self.layer.mask = maskLayer;
+}
+
+@end
+
 //@implementation UILabel (TextSize)
 //
 //- (CGSize)boundingRectWithSize:(CGSize)size {

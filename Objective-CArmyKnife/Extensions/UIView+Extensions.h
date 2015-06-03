@@ -9,6 +9,12 @@
 
 @end
 
+@interface UIView (CALayer)
+
+- (void)setRoundedCorners:(UIRectCorner)corners radius:(CGSize)size;
+
+@end
+
 //@interface UIView (TextSize)
 //
 //- (CGSize)boundingRectWithSize:(CGSize)size;
