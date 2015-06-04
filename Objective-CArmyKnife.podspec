@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Objective-CArmyKnife"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "收录oc常用工具方法，提高开发效率，避免重复造轮子，欢迎分享代码"
   s.homepage     = "http://github.com/Michael-Lfx/Objective-CArmyKnife"
   s.license      = "MIT"
