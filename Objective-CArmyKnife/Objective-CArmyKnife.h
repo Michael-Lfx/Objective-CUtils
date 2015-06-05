@@ -3,6 +3,7 @@
 #import "UIColor+Extensions.h"
 #import "UIDevice+Extensions.h"
 #import "UIVIew+Extensions.h"
+#import "UIImageView+Extensions.h"
 
 // Foundation
 #import "NSData+Extensions.h"
@@ -14,4 +15,7 @@
 
 // Core Graphics
 #import "CGRect+Extensions.h"
+
+// Core Animation
+#import "CAAnimation+Extensions.h"
 

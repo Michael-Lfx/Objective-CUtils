@@ -15,6 +15,27 @@
 
 @end
 
+
+#ifndef kDuration
+#define kDuration (0.5)
+#endif
+
+@interface UIView (Animation)
+
+- (void)defaultShakeAnimation;
+- (void)shakeAnimationWithMargin:(CGFloat)margin duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount;
+
+/**
+ *  旋转360度动画
+ */
+- (void)defaultRotateAnimation;
+- (void)rotateAnimationFrom:(CGFloat)fromValue to:(CGFloat)toValue duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount;
+
+- (void)defaultBounceAnimation;
+- (void)bounceAnimationWithValues:(NSArray *)values duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount;
+
+@end
+
 //@interface UIView (TextSize)
 //
 //- (CGSize)boundingRectWithSize:(CGSize)size;
