@@ -70,17 +70,46 @@
 
 #pragma mark 摇晃
 
-- (void)defaultShakeAnimation{
+- (void)defaultShakeAnimation {
     [self shakeAnimationWithMargin:10 duration:0.20 repeatCount:2];
 }
 
-- (void)shakeAnimationWithMargin:(CGFloat)margin duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount{
-    CAKeyframeAnimation *shakeAnimation = [CAKeyframeAnimation animation];
-    shakeAnimation.keyPath = @"transform.translation.x";
+- (void)shakeAnimationWithMargin:(CGFloat)margin duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount {
+    CAKeyframeAnimation *shakeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
     shakeAnimation.values = @[@0, @(-margin), @(margin), @0];
     shakeAnimation.duration = duration;
     shakeAnimation.repeatCount = repeatCount;
-    [self.layer addAnimation:shakeAnimation forKey:@"shakeAnimation"];
+    [self.layer addAnimation:shakeAnimation forKey:@"shakeAnimationWithX"];
+}
+
+#pragma mark 旋转
+
+- (void)defaultRotateAnimation {
+    [self rotateAnimationFrom:0 to:M_PI * 2 duration:kDuration repeatCount:1];
+}
+
+- (void)rotateAnimationFrom:(CGFloat)fromValue to:(CGFloat)toValue duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount {
+    CABasicAnimation *rotateAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    rotateAnimation.fromValue = [NSNumber numberWithDouble:fromValue];
+    rotateAnimation.toValue = [NSNumber numberWithDouble:toValue];
+    rotateAnimation.duration = duration;
+    rotateAnimation.repeatCount = repeatCount;
+    [self.layer addAnimation:rotateAnimation forKey:@"rotation360"];
+}
+
+#pragma mark 弹性动画
+
+- (void)defaultBounceAnimation {
+    [self bounceAnimationWithValues:@[@1.0, @1.4, @0.9, @1.15, @0.95, @1.02, @1.0] duration:kDuration repeatCount:1];
+}
+
+- (void)bounceAnimationWithValues:(NSArray *)values duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount {
+    CAKeyframeAnimation *bounceAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    bounceAnimation.values = @[@1.0, @1.4, @0.9, @1.15, @0.95, @1.02, @1.0];
+    bounceAnimation.duration = duration;
+    bounceAnimation.repeatCount = repeatCount;
+    bounceAnimation.calculationMode = kCAAnimationCubic;
+    [self.layer addAnimation:bounceAnimation forKey:@"bounceAnimation"];
 }
 
 @end
