@@ -63,6 +63,28 @@
 
 @end
 
+
+#pragma mark - 动画
+
+@implementation UIView (Animation)
+
+#pragma mark 摇晃
+
+- (void)defaultShakeAnimation{
+    [self shakeAnimationWithMargin:10 duration:0.20 repeatCount:2];
+}
+
+- (void)shakeAnimationWithMargin:(CGFloat)margin duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount{
+    CAKeyframeAnimation *shakeAnimation = [CAKeyframeAnimation animation];
+    shakeAnimation.keyPath = @"transform.translation.x";
+    shakeAnimation.values = @[@0, @(-margin), @(margin), @0];
+    shakeAnimation.duration = duration;
+    shakeAnimation.repeatCount = repeatCount;
+    [self.layer addAnimation:shakeAnimation forKey:@"shakeAnimation"];
+}
+
+@end
+
 //@implementation UILabel (TextSize)
 //
 //- (CGSize)boundingRectWithSize:(CGSize)size {

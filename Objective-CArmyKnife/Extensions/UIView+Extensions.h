@@ -15,6 +15,14 @@
 
 @end
 
+
+@interface UIView (Animation)
+
+- (void)defaultShakeAnimation;
+- (void)shakeAnimationWithMargin:(CGFloat)margin duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount;
+
+@end
+
 //@interface UIView (TextSize)
 //
 //- (CGSize)boundingRectWithSize:(CGSize)size;
