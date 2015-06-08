@@ -1,11 +1,14 @@
 @import UIKit;
 
-
 @interface UIView (Frame)
 
-@property (nonatomic) CGFloat x;
-@property (nonatomic) CGFloat y;
-@property (nonatomic) CGFloat width;
-@property (nonatomic) CGFloat height;
+- (CGFloat)height;
+- (CGFloat)width;
+- (CGFloat)x;
+- (CGFloat)y;
+- (void)setHeight:(CGFloat)height;
+- (void)setWidth:(CGFloat)width;
+- (void)setX:(CGFloat)x;
+- (void)setY:(CGFloat)y;
 
 @end
