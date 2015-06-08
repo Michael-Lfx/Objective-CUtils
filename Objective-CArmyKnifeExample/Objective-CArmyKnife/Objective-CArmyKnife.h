@@ -7,10 +7,10 @@
 
 // Foundation
 #import "NSData+Extensions.h"
-#import "NSObject+Extensions.h"
-#import "NSArray+Extensions.h"
-#import "NSSet+Extensions.h"
-#import "NSDictionary+Extensions.h"
+#import "NSObject+PrintProperty.h"
+#import "NSArray+PrintProperty.h"
+#import "NSSet+PrintProperty.h"
+#import "NSDictionary+PrintProperty.h"
 #import "NSString+Extensions.h"
 
 // Core Graphics

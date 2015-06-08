@@ -1,9 +1,8 @@
-#import "NSObject+Extensions.h"
-#import "NSArray+Extensions.h"
+#import "NSObject+PrintModelProperty.h"
+#import "NSArray+PrintModelProperty.h"
 
-#pragma mark - 输出可便于阅读的内容
 
-@implementation NSArray (Description)
+@implementation NSArray (PrintModelProperty)
 
 - (NSString *)readableDescription {
     NSMutableString *result = [NSMutableString string];

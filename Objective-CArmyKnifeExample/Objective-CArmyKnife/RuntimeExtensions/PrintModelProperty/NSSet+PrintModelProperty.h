@@ -1,6 +1,10 @@
 @import Foundation;
 
-@interface NSSet (Description)
+
+/**
+ *  输出可便于阅读的内容
+ */
+@interface NSSet (PrintModelProperty)
 
 /**
  *  输出可便于阅读的内容

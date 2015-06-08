@@ -1,9 +1,8 @@
-#import "NSObject+Extensions.h"
-#import "NSDictionary+Extensions.h"
+#import "NSObject+PrintModelProperty.h"
+#import "NSDictionary+PrintModelProperty.h"
 
-#pragma mark - 输出可便于阅读的内容
 
-@implementation NSDictionary (Description)
+@implementation NSDictionary (PrintModelProperty)
 
 - (NSString *)readableDescription {
     NSMutableString *result = [NSMutableString string];
