@@ -1,4 +1,4 @@
-#import "UIView+Extensions.h"
+#import "UIView+Frame.h"
 
 @implementation UIView(CGRect)
 

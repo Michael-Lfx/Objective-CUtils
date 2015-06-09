@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "LoopLoadingView.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) LoopLoadingView *loadingView;
 
 @end
 
@@ -17,11 +20,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    LoopLoadingView *loading = [[LoopLoadingView alloc] initWithFrame:CGRectMake(50, 100, 100, 100)];
+    [self.view addSubview:loading];
+    self.loadingView = loading;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.loadingView setLoopImage:[UIImage imageNamed:@"loading_loop"]];
+    [self.loadingView setLogoImage:[UIImage imageNamed:@"loading_monkey"]];
+    [self.loadingView startAnimating];
 }
 
 @end
+
+
