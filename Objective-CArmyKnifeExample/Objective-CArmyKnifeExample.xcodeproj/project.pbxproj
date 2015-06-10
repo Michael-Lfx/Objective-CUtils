@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C9654091B27D22B00E8E5B1 /* NavigationBar+Colorful.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9654081B27D22B00E8E5B1 /* NavigationBar+Colorful.m */; };
 		4CE338811B2526830071E68C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE338801B2526830071E68C /* main.m */; };
 		4CE338841B2526830071E68C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE338831B2526830071E68C /* AppDelegate.m */; };
 		4CE338871B2526830071E68C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE338861B2526830071E68C /* ViewController.m */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C9654071B27D22B00E8E5B1 /* NavigationBar+Colorful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NavigationBar+Colorful.h"; sourceTree = "<group>"; };
+		4C9654081B27D22B00E8E5B1 /* NavigationBar+Colorful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NavigationBar+Colorful.m"; sourceTree = "<group>"; };
 		4CE3387B1B2526830071E68C /* Objective-CArmyKnifeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-CArmyKnifeExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE3387F1B2526830071E68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CE338801B2526830071E68C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -131,6 +134,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C9654051B27D15F00E8E5B1 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				4CF3F2021B26D78F00B1DF33 /* LoopLoadingView.h */,
+				4CF3F2031B26D78F00B1DF33 /* LoopLoadingView.m */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
+		4C9654061B27D1CD00E8E5B1 /* TransparentNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				4C9654071B27D22B00E8E5B1 /* NavigationBar+Colorful.h */,
+				4C9654081B27D22B00E8E5B1 /* NavigationBar+Colorful.m */,
+			);
+			name = TransparentNavigationBar;
+			sourceTree = "<group>";
+		};
 		4CE338721B2526830071E68C = {
 			isa = PBXGroup;
 			children = (
@@ -209,8 +230,7 @@
 		4CF3F1A31B2567A000B1DF33 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				4CF3F2021B26D78F00B1DF33 /* LoopLoadingView.h */,
-				4CF3F2031B26D78F00B1DF33 /* LoopLoadingView.m */,
+				4C9654051B27D15F00E8E5B1 /* Loading */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -325,6 +345,7 @@
 		4CF3F1CC1B2567A000B1DF33 /* UIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				4C9654061B27D1CD00E8E5B1 /* TransparentNavigationBar */,
 				4CF3F1CD1B2567A000B1DF33 /* DataSourceCollections */,
 				4CF3F1D21B2567A000B1DF33 /* Frame */,
 				4CF3F1D51B2567A000B1DF33 /* LoadImage */,
@@ -493,6 +514,7 @@
 				4CF3F1F41B2567A000B1DF33 /* UITableView+RegisterCell.m in Sources */,
 				4CF3F1EF1B2567A000B1DF33 /* NSArray+CollectionViewDataSource.m in Sources */,
 				4CF3F1EA1B2567A000B1DF33 /* MethodSwizzConvenienceInterface.m in Sources */,
+				4C9654091B27D22B00E8E5B1 /* NavigationBar+Colorful.m in Sources */,
 				4CF3F2041B26D78F00B1DF33 /* LoopLoadingView.m in Sources */,
 				4CF3F1EB1B2567A000B1DF33 /* NSArray+PrintModelProperty.m in Sources */,
 				4CF3F1E11B2567A000B1DF33 /* UIView+Frame.m in Sources */,
