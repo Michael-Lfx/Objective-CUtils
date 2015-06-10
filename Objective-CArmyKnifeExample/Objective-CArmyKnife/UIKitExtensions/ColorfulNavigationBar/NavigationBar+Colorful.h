@@ -1,7 +1,8 @@
 @import UIKit;
 
 /**
- *  支持透明、多种颜色渐变的NavigationBar。
+ *  @brief 支持透明、多种颜色渐变的NavigationBar。
+ *
  *  说明：Xcode 6.3.2中Interface Builder不支持NavigationBar的实时渲染，加上IB_DESIGNABLE与IBInspectable无任何意义
  *  故不做成子类，改用拓展实现
  */
@@ -9,6 +10,8 @@
 
 /**
  *  单个颜色，与gradientColors互斥
+ *
+ *  @see 设置一组渐变色可使用 gradientColors 属性
  */
 @property (strong, nonatomic) UIColor *soloColor;
 
