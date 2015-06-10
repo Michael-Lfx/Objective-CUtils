@@ -33,8 +33,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ColorfulNavigationBar</string>
 			<key>path</key>
 			<string>ColorfulNavigationBar</string>
 			<key>sourceTree</key>
@@ -70,6 +68,88 @@
 		<dict>
 			<key>fileRef</key>
 			<string>4C9654081B27D22B00E8E5B1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4C96540A1B28698800E8E5B1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4C96540B1B2869CE00E8E5B1</string>
+				<string>4C96540C1B2869CE00E8E5B1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TableViewSeparator</string>
+			<key>path</key>
+			<string>TableViewSeparator</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C96540B1B2869CE00E8E5B1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UITableView+Separator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C96540C1B2869CE00E8E5B1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UITableView+Separator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C96540D1B2869CE00E8E5B1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4C96540C1B2869CE00E8E5B1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4C96540E1B286C4500E8E5B1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C96540F1B286C4500E8E5B1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C9654101B286C4500E8E5B1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4C96540F1B286C4500E8E5B1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -167,6 +247,7 @@
 				<string>4CF3F1EA1B2567A000B1DF33</string>
 				<string>4C9654091B27D22B00E8E5B1</string>
 				<string>4CF3F2041B26D78F00B1DF33</string>
+				<string>4C96540D1B2869CE00E8E5B1</string>
 				<string>4CF3F1EB1B2567A000B1DF33</string>
 				<string>4CF3F1E11B2567A000B1DF33</string>
 				<string>4CE338871B2526830071E68C</string>
@@ -189,6 +270,7 @@
 				<string>4CF3F1ED1B2567A000B1DF33</string>
 				<string>4CF3F1E41B2567A000B1DF33</string>
 				<string>4CF3F1F81B25696B00B1DF33</string>
+				<string>4C9654101B286C4500E8E5B1</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -281,6 +363,8 @@
 				<string>4CE338831B2526830071E68C</string>
 				<string>4CE338851B2526830071E68C</string>
 				<string>4CE338861B2526830071E68C</string>
+				<string>4C96540E1B286C4500E8E5B1</string>
+				<string>4C96540F1B286C4500E8E5B1</string>
 				<string>4CE338881B2526830071E68C</string>
 				<string>4CE3388B1B2526830071E68C</string>
 				<string>4CE3388D1B2526830071E68C</string>
@@ -1264,8 +1348,6 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Objective-CArmyKnife.h</string>
 			<key>path</key>
 			<string>Objective-CArmyKnife.h</string>
 			<key>sourceTree</key>
@@ -1495,6 +1577,7 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>4C96540A1B28698800E8E5B1</string>
 				<string>4C9654061B27D1CD00E8E5B1</string>
 				<string>4CF3F1CD1B2567A000B1DF33</string>
 				<string>4CF3F1D21B2567A000B1DF33</string>
@@ -1586,8 +1669,10 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ViewFrame</string>
 			<key>path</key>
-			<string>Frame</string>
+			<string>ViewFrame</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
