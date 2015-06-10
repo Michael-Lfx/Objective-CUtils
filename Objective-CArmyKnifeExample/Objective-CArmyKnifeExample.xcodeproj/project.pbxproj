@@ -84,7 +84,7 @@
 		4CF3F1B71B2567A000B1DF33 /* UIImageView+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extensions.m"; sourceTree = "<group>"; };
 		4CF3F1B81B2567A000B1DF33 /* UIView+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
 		4CF3F1B91B2567A000B1DF33 /* UIView+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
-		4CF3F1BB1B2567A000B1DF33 /* Objective-CArmyKnife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-CArmyKnife.h"; sourceTree = "<group>"; };
+		4CF3F1BB1B2567A000B1DF33 /* Objective-CArmyKnife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Objective-CArmyKnife.h"; path = "../Objective-CArmyKnife.h"; sourceTree = "<group>"; };
 		4CF3F1BD1B2567A000B1DF33 /* PrintModelProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintModelProperty.h; sourceTree = "<group>"; };
 		4CF3F1C01B2567A000B1DF33 /* MethodSwizzConvenienceInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzConvenienceInterface.h; sourceTree = "<group>"; };
 		4CF3F1C11B2567A000B1DF33 /* MethodSwizzConvenienceInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzConvenienceInterface.m; sourceTree = "<group>"; };
@@ -140,16 +140,17 @@
 				4CF3F2021B26D78F00B1DF33 /* LoopLoadingView.h */,
 				4CF3F2031B26D78F00B1DF33 /* LoopLoadingView.m */,
 			);
-			name = Loading;
+			path = Loading;
 			sourceTree = "<group>";
 		};
-		4C9654061B27D1CD00E8E5B1 /* TransparentNavigationBar */ = {
+		4C9654061B27D1CD00E8E5B1 /* ColorfulNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
 				4C9654071B27D22B00E8E5B1 /* NavigationBar+Colorful.h */,
 				4C9654081B27D22B00E8E5B1 /* NavigationBar+Colorful.m */,
 			);
-			name = TransparentNavigationBar;
+			name = ColorfulNavigationBar;
+			path = TransparentNavigationBar;
 			sourceTree = "<group>";
 		};
 		4CE338721B2526830071E68C = {
@@ -192,7 +193,7 @@
 				4CE3387F1B2526830071E68C /* Info.plist */,
 				4CE338801B2526830071E68C /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4CE338971B2526840071E68C /* Objective-CArmyKnifeExampleTests */ = {
@@ -209,7 +210,7 @@
 			children = (
 				4CE338991B2526840071E68C /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4CF3F1A21B2567A000B1DF33 /* Objective-CArmyKnife */ = {
@@ -218,7 +219,6 @@
 				4CF3F1A31B2567A000B1DF33 /* Controls */,
 				4CF3F1A41B2567A000B1DF33 /* CoreGraphicsExtensions */,
 				4CF3F1A81B2567A000B1DF33 /* FoundationExtensions */,
-				4CF3F1BB1B2567A000B1DF33 /* Objective-CArmyKnife.h */,
 				4CF3F1BC1B2567A000B1DF33 /* PublicHeaders */,
 				4CF3F1BE1B2567A000B1DF33 /* RuntimeExtensions */,
 				4CF3F1CC1B2567A000B1DF33 /* UIKitExtensions */,
@@ -294,6 +294,7 @@
 		4CF3F1BC1B2567A000B1DF33 /* PublicHeaders */ = {
 			isa = PBXGroup;
 			children = (
+				4CF3F1BB1B2567A000B1DF33 /* Objective-CArmyKnife.h */,
 				4CF3F1BD1B2567A000B1DF33 /* PrintModelProperty.h */,
 			);
 			path = PublicHeaders;
@@ -345,7 +346,7 @@
 		4CF3F1CC1B2567A000B1DF33 /* UIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				4C9654061B27D1CD00E8E5B1 /* TransparentNavigationBar */,
+				4C9654061B27D1CD00E8E5B1 /* ColorfulNavigationBar */,
 				4CF3F1CD1B2567A000B1DF33 /* DataSourceCollections */,
 				4CF3F1D21B2567A000B1DF33 /* Frame */,
 				4CF3F1D51B2567A000B1DF33 /* LoadImage */,
@@ -566,6 +567,7 @@
 				4CE338891B2526830071E68C /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		4CE3388D1B2526830071E68C /* LaunchScreen.xib */ = {
@@ -574,6 +576,7 @@
 				4CE3388E1B2526830071E68C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -665,7 +668,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Objective-CArmyKnifeExample/Info.plist";
+				INFOPLIST_FILE = "Objective-CArmyKnifeExample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -675,7 +678,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Objective-CArmyKnifeExample/Info.plist";
+				INFOPLIST_FILE = "Objective-CArmyKnifeExample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -693,7 +696,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Objective-CArmyKnifeExampleTests/Info.plist";
+				INFOPLIST_FILE = "Objective-CArmyKnifeExampleTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Objective-CArmyKnifeExample.app/Objective-CArmyKnifeExample";
@@ -708,7 +711,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Objective-CArmyKnifeExampleTests/Info.plist";
+				INFOPLIST_FILE = "Objective-CArmyKnifeExampleTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Objective-CArmyKnifeExample.app/Objective-CArmyKnifeExample";

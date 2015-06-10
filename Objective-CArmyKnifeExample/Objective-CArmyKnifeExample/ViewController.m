@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "LoopLoadingView.h"
-#import "NavigationBar+Transparency.h"
+#import "NavigationBar+Colorful.h"
 
 @interface ViewController ()
 
@@ -26,9 +26,9 @@
     [self.view addSubview:loading];
     self.loadingView = loading;
     
-
+    // 透明
     self.navigationController.navigationBar.soloColor = [UIColor clearColor];
-
+    // 渐变
 //    UIColor *topColor = [[UIColor blueColor] colorWithAlphaComponent:1];
 //    UIColor *bottomColor = [[UIColor blueColor] colorWithAlphaComponent:0.2];
 //    self.navigationController.navigationBar.gradientColors = @[topColor, bottomColor];

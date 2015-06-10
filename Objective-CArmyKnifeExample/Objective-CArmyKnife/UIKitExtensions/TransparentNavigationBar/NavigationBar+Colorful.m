@@ -24,7 +24,7 @@ static const char *kGradientColorsKey = "kGradientColorsKey";
 #define kEndPoint 1.5
 
 - (void)setGradientColors:(NSArray *)gradientColors {
-    objc_setAssociatedObject(self, &kGradientColorsKey, gradientColors, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, &kGradientColorsKey, gradientColors, OBJC_ASSOCIATION_COPY);
     UIImage *image = [self imageWithColorConstructBlock:^(CGRect *rect) {
         CFMutableArrayRef colors = CFArrayCreateMutable(CFAllocatorGetDefault(), gradientColors.count, nil);
         for (UIColor *color in gradientColors) {
