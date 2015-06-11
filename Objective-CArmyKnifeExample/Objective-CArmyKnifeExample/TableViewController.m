@@ -8,9 +8,10 @@
 
 #import "TableViewController.h"
 #import "UITableView+Separator.h"
+#import "UITableView+MoveCell.h"
 
 @interface TableViewController ()
-@property (copy, nonatomic) NSArray *dataForTableView;
+@property (strong, nonatomic) NSMutableArray *dataForTableView;
 @end
 
 @implementation TableViewController
@@ -23,9 +24,17 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.dataForTableView = @[@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language"];
+    NSArray *array = @[@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language"];
+
+    id x = [array mutableCopy];
+    NSLog(@"%p", x);
+    self.dataForTableView = [array mutableCopy];
     [self.tableView clearExtraSeparator];
-    
+    __weak typeof(self) weakSelf = self;
+    [self.tableView enableDragCellWithDataSourceUpdateBlock:^(NSIndexPath *dstIndexPath, NSIndexPath *srcIndexPath) {
+        [weakSelf.dataForTableView exchangeObjectAtIndex:dstIndexPath.row withObjectAtIndex:srcIndexPath.row];
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,5 +1,9 @@
 @import UIKit;
 
+#ifndef kDuration
+#define kDuration (0.5)
+#endif
+
 @interface UIImageView (Animation)
 
 #pragma mark FrameAnimation

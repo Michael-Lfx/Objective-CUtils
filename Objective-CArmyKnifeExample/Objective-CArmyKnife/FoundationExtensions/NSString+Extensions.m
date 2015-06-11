@@ -75,19 +75,19 @@ static char base64EncodingTable[64] = {
 }
 
 @end
-
-
-#pragma mark - UIColor
-
-#import "UIColor+Extensions.h"
-
-@implementation NSString (Color)
-
-- (UIColor *)color {
-    return [UIColor colorWithHexString:self];
-}
-
-@end
+//
+//
+//#pragma mark - UIColor
+//
+//#import "UIColor+Extensions.h"
+//
+//@implementation NSString (Color)
+//
+//- (UIColor *)color {
+//    return [UIColor colorWithHexString:self];
+//}
+//
+//@end
 
 
 #pragma mark - 正则

@@ -1,5 +1,4 @@
-#import "UIImageView+Extensions.h"
-#import "UIView+Extensions.h"
+#import "UIImageView+Animation.h"
 
 @implementation UIImageView (Animation)
 
