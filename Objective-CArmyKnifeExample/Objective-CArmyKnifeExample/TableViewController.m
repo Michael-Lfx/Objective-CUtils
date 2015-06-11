@@ -25,7 +25,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.dataForTableView = @[@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language"];
     [self.tableView clearExtraSeparator];
-    [self.tableView makeSeparatorEqualToScreenWidthWithCellIdentifiers:@[@"TestCell"]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,8 +45,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TestCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    cell.textLabel.text = self.dataForTableView[indexPath.row];
+    [tableView makeSeparatorEqualToScreenWidthWithCell:cell]
+     // Configure the cell...
+        .textLabel
+        .text = self.dataForTableView[indexPath.row];
     
     return cell;
 }

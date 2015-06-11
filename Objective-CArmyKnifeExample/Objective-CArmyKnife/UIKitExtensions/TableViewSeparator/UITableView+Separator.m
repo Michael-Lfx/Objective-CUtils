@@ -14,14 +14,11 @@
 /**
  *  参考 http://stackoverflow.com/questions/25770119/ios-8-uitableview-separator-inset-0-not-working/25772101#25772101
  */
-- (instancetype)makeSeparatorEqualToScreenWidthWithCellIdentifiers:(NSArray *)identifiers {
-    methodSwizz(self.class, @selector(dequeueReusableCellWithIdentifier:), @selector(spt_dequeueReusableCellWithIdentifier:));
-    self.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    return self;
-}
-
-- (id)spt_dequeueReusableCellWithIdentifier:(NSString *)identifier {
-    UITableViewCell *cell = [self spt_dequeueReusableCellWithIdentifier:identifier];
+- (UITableViewCell *)makeSeparatorEqualToScreenWidthWithCell:(UITableViewCell *)cell {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        self.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    });
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.preservesSuperviewLayoutMargins = NO;
     return cell;

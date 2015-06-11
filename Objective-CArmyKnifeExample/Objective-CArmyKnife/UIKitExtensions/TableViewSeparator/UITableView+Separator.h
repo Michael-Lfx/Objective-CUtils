@@ -12,10 +12,30 @@
 - (instancetype)clearExtraSeparator;
 
 /**
- *  让分割线等于屏幕宽度
+ *  让Cell分割线等于屏幕宽度
+ 
+ 建议用法：
+ 
+ - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TestCell" forIndexPath:indexPath];
+ 
+    [tableView makeSeparatorEqualToScreenWidthWithCell:cell]
+ 
+        // Configure the cell...
+ 
+        .textLabel
+ 
+        .text = self.dataForTableView[indexPath.row];
+ 
+    return cell;
+ 
+ }
+ 
+ 做这个功能时，我走了些弯路。想过混写dealloc，但是ARC下混写dealloc，听说有较大副作用。
  *
- *  @return 当前表视图
+ *  @return 当前UITableViewCell
  */
-- (instancetype)makeSeparatorEqualToScreenWidthWithCellIdentifiers:(NSArray *)identifiers;
+- (UITableViewCell *)makeSeparatorEqualToScreenWidthWithCell:(UITableViewCell *)cell;
 
 @end
