@@ -10,7 +10,7 @@
 #import "UITableView+Separator.h"
 
 @interface TableViewController ()
-
+@property (copy, nonatomic) NSArray *dataForTableView;
 @end
 
 @implementation TableViewController
@@ -23,7 +23,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.dataForTableView = @[@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language",@"hello", @"world", @"objc", @"programming", @"language"];
     [self.tableView clearExtraSeparator];
+    [self.tableView makeSeparatorEqualToScreenWidthWithCellIdentifiers:@[@"TestCell"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,27 +35,22 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.dataForTableView.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TestCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.textLabel.text = self.dataForTableView[indexPath.row];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
