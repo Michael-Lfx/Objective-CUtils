@@ -16,7 +16,7 @@
 
 - (void)bounceAnimationWithValues:(NSArray *)values duration:(CGFloat)duration repeatCount:(CGFloat)repeatCount {
     CAKeyframeAnimation *bounceAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-    bounceAnimation.values = @[@1.0, @1.4, @0.9, @1.15, @0.95, @1.02, @1.0];
+    bounceAnimation.values = values;
     bounceAnimation.duration = duration;
     bounceAnimation.repeatCount = repeatCount;
     bounceAnimation.calculationMode = kCAAnimationCubic;
