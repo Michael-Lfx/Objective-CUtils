@@ -9,10 +9,12 @@
 #import "ViewController.h"
 #import "LoopLoadingView.h"
 #import "NavigationBar+Colorful.h"
+#import "UIView+BounceAnimation.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) LoopLoadingView *loadingView;
+@property (weak, nonatomic) IBOutlet UIView *viewForBounceAnimation;
 
 @end
 
@@ -41,6 +43,10 @@
     [self.loadingView setLoopImage:[UIImage imageNamed:@"loading_loop"]];
     [self.loadingView setLogoImage:[UIImage imageNamed:@"loading_monkey"]];
     [self.loadingView startAnimating];
+}
+
+- (IBAction)tapBounceAnimationBtn:(id)sender {
+    [self.viewForBounceAnimation defaultBounceAnimation];
 }
 
 @end

@@ -18,7 +18,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj5-yo-nPq">
                                 <rect key="frame" x="226" y="136" width="121" height="75"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="表格单元旋转动画">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -27,17 +27,33 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhE-sA-MUr">
                                 <rect key="frame" x="43" y="235" width="130" height="86"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="拖拽表格单元">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="38T-zw-Nml" kind="show" id="YdQ-Ks-LPe"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ysu-9I-5NW">
+                                <rect key="frame" x="51" y="313" width="90" height="79"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.69803921570000005" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7p-Tq-TTa">
+                                <rect key="frame" x="66" y="400" width="60" height="30"/>
+                                <state key="normal" title="弹跳动画">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBounceAnimationBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dA5-zX-ijd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fXz-sg-2AE"/>
+                    <connections>
+                        <outlet property="viewForBounceAnimation" destination="Ysu-9I-5NW" id="aLR-hN-Lb2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
