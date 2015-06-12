@@ -27,6 +27,8 @@ typedef void(^MoveCellDataSourceUpdateBlock)(NSIndexPath *dstIndexPath, NSIndexP
  参考自：http://www.raywenderlich.com/63089/cookbook-moving-table-view-cells-with-a-long-press-gesture
  
  TODO:UICollectionView实现类似功能
+ TODO:拖拽超过屏幕时，调整容器，方便向上或向下移动单元格
+ TODO:更自然的动画
  
  *  @param block 更新数据源
  *

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj5-yo-nPq">
-                                <rect key="frame" x="185" y="111" width="46" height="30"/>
+                                <rect key="frame" x="226" y="136" width="121" height="75"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhE-sA-MUr">
-                                <rect key="frame" x="45" y="186" width="46" height="30"/>
+                                <rect key="frame" x="43" y="235" width="130" height="86"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,12 +47,12 @@
         <scene sceneID="NXH-hn-QuG">
             <objects>
                 <tableViewController id="38T-zw-Nml" customClass="TableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xCU-31-EXi">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="xCU-31-EXi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestCell" textLabel="JO6-4p-Gie" detailTextLabel="gax-CI-jMX" style="IBUITableViewCellStyleSubtitle" id="BIW-CZ-PJ4">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestCell" textLabel="JO6-4p-Gie" detailTextLabel="gax-CI-jMX" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="BIW-CZ-PJ4">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BIW-CZ-PJ4" id="b11-Zf-dlY">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="-335" y="355"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="el2-y9-W6W">
             <objects>
-                <viewController id="lNU-Ua-QF9" sceneMemberID="viewController">
+                <viewController id="lNU-Ua-QF9" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lEx-UU-0e3"/>
                         <viewControllerLayoutGuide type="bottom" id="QCz-2z-g96"/>

@@ -33,6 +33,30 @@
  }
  
  做这个功能时，我走了些弯路。想过混写dealloc，但是ARC下混写dealloc，听说有较大副作用。
+ 
+ https://github.com/zhigang1992/ZGParallelView/issues/8
+ 
+ >Overriding -dealloc in a category is fatal; it replaces the existing implementation, ensuring that every UITableView deallocation will, at best, leak and, at worst, crash or yield undefined behavior.
+
+ >As well, you shouldn't be overriding the KVO methods, either (or any other method of the original class) in a category.
+ 
+ ```
+ + (void)load
+ {
+ Method origMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
+ Method newMethod = class_getInstanceMethod([self class], @selector(my_dealloc));
+ method_exchangeImplementations(origMethod, newMethod);
+ }
+ 
+ - (void)my_dealloc
+ {
+ // do your logic here
+ 
+ 
+ //this calls original dealloc method
+ [self my_dealloc];
+ }
+ ```
  *
  *  @return 当前UITableViewCell
  */

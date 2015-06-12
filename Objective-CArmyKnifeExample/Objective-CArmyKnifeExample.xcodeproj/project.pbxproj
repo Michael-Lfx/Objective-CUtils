@@ -234,8 +234,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>HexStringColor</string>
 			<key>path</key>
 			<string>HexStringColor</string>
 			<key>sourceTree</key>
@@ -250,10 +248,282 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ImageViewAnimation</string>
 			<key>path</key>
 			<string>ImageViewAnimation</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA0D1B29BFEE00A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SecondViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA0E1B29BFEE00A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SecondViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA0F1B29BFEE00A9C370</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4CBFBA0E1B29BFEE00A9C370</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4CBFBA101B2AA90F00A9C370</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4CBFBA111B2AA95700A9C370</string>
+				<string>4CBFBA121B2AA95700A9C370</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Transform3DAnimation</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA111B2AA95700A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIView+Transform3DAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA121B2AA95700A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIView+Transform3DAnimation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA131B2AA95700A9C370</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4CBFBA121B2AA95700A9C370</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4CBFBA141B2AAB4300A9C370</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4CBFBA151B2AAB4F00A9C370</string>
+				<string>4CBFBA161B2AAB4F00A9C370</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ShakeAnimation</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA151B2AAB4F00A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIView+ShakeAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA161B2AAB4F00A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIView+ShakeAnimation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA171B2AAB4F00A9C370</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4CBFBA161B2AAB4F00A9C370</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4CBFBA181B2AABD700A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIView+RotateAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA191B2AABD700A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIView+RotateAnimation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA1A1B2AABD700A9C370</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4CBFBA191B2AABD700A9C370</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4CBFBA1B1B2AAC4000A9C370</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4CBFBA1C1B2AAC4900A9C370</string>
+				<string>4CBFBA1D1B2AAC4900A9C370</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>BounceAnimation</string>
+			<key>path</key>
+			<string>BounceAnimation</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA1C1B2AAC4900A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIView+BounceAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA1D1B2AAC4900A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIView+BounceAnimation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA1E1B2AAC4900A9C370</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4CBFBA1D1B2AAC4900A9C370</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4CBFBA1F1B2AACB000A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIView+RoundCorner.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA201B2AACB000A9C370</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIView+RoundCorner.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA211B2AACB000A9C370</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4CBFBA201B2AACB000A9C370</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4CBFBA221B2AACC700A9C370</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4CBFBA1F1B2AACB000A9C370</string>
+				<string>4CBFBA201B2AACB000A9C370</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>RoundCorner</string>
+			<key>path</key>
+			<string>RoundCorner</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CBFBA231B2AACD200A9C370</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4CBFBA181B2AABD700A9C370</string>
+				<string>4CBFBA191B2AABD700A9C370</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>RotateAnimation</string>
+			<key>path</key>
+			<string>RotateAnimation</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -346,20 +616,26 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
+				<string>4CBFBA0F1B29BFEE00A9C370</string>
 				<string>4CF3F1F41B2567A000B1DF33</string>
 				<string>4CF3F1EF1B2567A000B1DF33</string>
 				<string>4CF3F1EA1B2567A000B1DF33</string>
+				<string>4CBFBA1E1B2AAC4900A9C370</string>
 				<string>4C9654091B27D22B00E8E5B1</string>
 				<string>4CF3F2041B26D78F00B1DF33</string>
 				<string>4C96540D1B2869CE00E8E5B1</string>
+				<string>4CBFBA211B2AACB000A9C370</string>
 				<string>4CF3F1EB1B2567A000B1DF33</string>
+				<string>4CBFBA171B2AAB4F00A9C370</string>
 				<string>4CF3F1E11B2567A000B1DF33</string>
 				<string>4CE338871B2526830071E68C</string>
 				<string>4CE338841B2526830071E68C</string>
 				<string>4CF3F1E71B2567A000B1DF33</string>
 				<string>4CF3F1E81B2567A000B1DF33</string>
+				<string>4CBFBA1A1B2AABD700A9C370</string>
 				<string>4CF3F1F51B2567A000B1DF33</string>
 				<string>4CF3F1F11B2567A000B1DF33</string>
+				<string>4CBFBA131B2AA95700A9C370</string>
 				<string>4CF3F1E51B2567A000B1DF33</string>
 				<string>4CF3F1F01B2567A000B1DF33</string>
 				<string>4CF3F1E21B2567A000B1DF33</string>
@@ -474,6 +750,8 @@
 				<string>4CE3388B1B2526830071E68C</string>
 				<string>4CE3388D1B2526830071E68C</string>
 				<string>4CE3387E1B2526830071E68C</string>
+				<string>4CBFBA0D1B29BFEE00A9C370</string>
+				<string>4CBFBA0E1B29BFEE00A9C370</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1677,6 +1955,9 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>4CBFBA1B1B2AAC4000A9C370</string>
+				<string>4CBFBA141B2AAB4300A9C370</string>
+				<string>4CBFBA101B2AA90F00A9C370</string>
 				<string>4C96544D1B297FF200E8E5B1</string>
 				<string>4C96544C1B297FB500E8E5B1</string>
 				<string>4C9654461B29318E00E8E5B1</string>
@@ -1687,6 +1968,8 @@
 				<string>4CF3F1D51B2567A000B1DF33</string>
 				<string>4CF3F1D81B2567A000B1DF33</string>
 				<string>4CF3F1DD1B2567A000B1DF33</string>
+				<string>4CBFBA231B2AACD200A9C370</string>
+				<string>4CBFBA221B2AACC700A9C370</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>

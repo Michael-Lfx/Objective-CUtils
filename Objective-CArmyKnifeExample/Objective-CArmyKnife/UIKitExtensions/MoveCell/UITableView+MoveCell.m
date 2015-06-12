@@ -31,7 +31,9 @@
     }
     UIGestureRecognizerState state = longPress.state;
     
+    // 手指位置
     CGPoint location = [longPress locationInView:self];
+    // 手指位置对应的单元格索引，当按在section header等非普通cell时，索引无效
     NSIndexPath *indexPath = [self indexPathForRowAtPoint:location];
     
     static UIView       *snapshot = nil;        ///< A snapshot of the row user is moving.
