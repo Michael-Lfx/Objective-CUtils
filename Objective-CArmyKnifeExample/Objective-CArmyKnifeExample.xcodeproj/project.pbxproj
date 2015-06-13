@@ -47,6 +47,7 @@
 		4CF3F1F51B2567A000B1DF33 /* UITabBarController+UINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3F1DF1B2567A000B1DF33 /* UITabBarController+UINavigationController.m */; };
 		4CF3F1F81B25696B00B1DF33 /* UIViewController+PrintHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3F1F71B25696B00B1DF33 /* UIViewController+PrintHierarchy.m */; };
 		4CF3F2041B26D78F00B1DF33 /* LoopLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3F2031B26D78F00B1DF33 /* LoopLoadingView.m */; };
+		CC793C421B2BCCE500402EFA /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC793C411B2BCCE500402EFA /* UIImage+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,8 @@
 		4CF3F1F71B25696B00B1DF33 /* UIViewController+PrintHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PrintHierarchy.m"; sourceTree = "<group>"; };
 		4CF3F2021B26D78F00B1DF33 /* LoopLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopLoadingView.h; sourceTree = "<group>"; };
 		4CF3F2031B26D78F00B1DF33 /* LoopLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopLoadingView.m; sourceTree = "<group>"; };
+		CC793C401B2BCCE500402EFA /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		CC793C411B2BCCE500402EFA /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +396,8 @@
 				4CF3F1B11B2567A000B1DF33 /* NSString+Extensions.m */,
 				4CF3F1B41B2567A000B1DF33 /* UIDevice+Extensions.h */,
 				4CF3F1B51B2567A000B1DF33 /* UIDevice+Extensions.m */,
+				CC793C401B2BCCE500402EFA /* UIImage+Extensions.h */,
+				CC793C411B2BCCE500402EFA /* UIImage+Extensions.m */,
 				4CF3F1B81B2567A000B1DF33 /* UIView+Extensions.h */,
 				4CF3F1B91B2567A000B1DF33 /* UIView+Extensions.m */,
 				4CF3F1BA1B2567A000B1DF33 /* Validation */,
@@ -662,6 +667,7 @@
 				4CF3F1E81B2567A000B1DF33 /* UIImageView+Animation.m in Sources */,
 				4CBFBA1A1B2AABD700A9C370 /* UIView+RotateAnimation.m in Sources */,
 				4CF3F1F51B2567A000B1DF33 /* UITabBarController+UINavigationController.m in Sources */,
+				CC793C421B2BCCE500402EFA /* UIImage+Extensions.m in Sources */,
 				4CF3F1F11B2567A000B1DF33 /* UIView+Frame.m in Sources */,
 				4CBFBA131B2AA95700A9C370 /* UIView+Transform3DAnimation.m in Sources */,
 				4CF3F1E51B2567A000B1DF33 /* NSString+Extensions.m in Sources */,
