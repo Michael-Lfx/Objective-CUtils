@@ -542,6 +542,7 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>4C30744F1B2EDA8700AF89E6</string>
 				<string>4C3074111B2E909100AF89E6</string>
 				<string>4C30735F1B2E819200AF89E6</string>
 				<string>4C3073601B2E819200AF89E6</string>
@@ -2132,10 +2133,57 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Week</string>
 			<key>path</key>
 			<string>Week</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C30744C1B2EDA8200AF89E6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSDate+Calendar.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C30744D1B2EDA8200AF89E6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSDate+Calendar.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C30744E1B2EDA8200AF89E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4C30744C1B2EDA8200AF89E6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4C30744F1B2EDA8700AF89E6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4C30744C1B2EDA8200AF89E6</string>
+				<string>4C30744D1B2EDA8200AF89E6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Calendar</string>
+			<key>path</key>
+			<string>Calendar</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2247,6 +2295,7 @@
 				<string>4C3073C71B2E819200AF89E6</string>
 				<string>4C3073BA1B2E819200AF89E6</string>
 				<string>4C3073D31B2E819200AF89E6</string>
+				<string>4C30744E1B2EDA8200AF89E6</string>
 				<string>4C3073C31B2E819200AF89E6</string>
 				<string>4C3073B71B2E819200AF89E6</string>
 				<string>4C3073C01B2E819200AF89E6</string>
