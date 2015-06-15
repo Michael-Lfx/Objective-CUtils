@@ -47,6 +47,15 @@
                                     <action selector="tapBounceAnimationBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dA5-zX-ijd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW4-t7-1u8">
+                                <rect key="frame" x="226" y="207" width="30" height="30"/>
+                                <state key="normal" title="渐变">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="h6Q-Ie-fuF" kind="show" id="VQg-2Y-tTb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -58,6 +67,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="410" y="331"/>
+        </scene>
+        <!--Gradient View Controller-->
+        <scene sceneID="j64-Kq-plH">
+            <objects>
+                <viewController id="h6Q-Ie-fuF" customClass="GradientViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hdb-E1-sG5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Env-de-cb1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uaj-gp-MxG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bum-Hb-YZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="1066"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="NXH-hn-QuG">

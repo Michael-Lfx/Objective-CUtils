@@ -15,6 +15,7 @@
 
 @property (strong, nonatomic) LoopLoadingView *loadingView;
 @property (weak, nonatomic) IBOutlet UIView *viewForBounceAnimation;
+@property (strong, nonatomic) NSString *hello;
 
 @end
 
@@ -35,6 +36,8 @@
 //    UIColor *bottomColor = [[UIColor blueColor] colorWithAlphaComponent:0.2];
 //    self.navigationController.navigationBar.gradientColors = @[topColor, bottomColor];
     self.title = @"我就是测试";
+    [self setHello:nil];
+    self.hello = nil;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -47,6 +50,7 @@
 
 - (IBAction)tapBounceAnimationBtn:(id)sender {
     [self.viewForBounceAnimation defaultBounceAnimation];
+    [self.loadingView stopAnimating];
 }
 
 @end

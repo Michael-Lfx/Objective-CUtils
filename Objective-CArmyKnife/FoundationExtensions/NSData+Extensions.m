@@ -12,5 +12,5 @@
 //                      size_t *outputLength);
 
 
-//	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"后会无期" ofType:@".mp3"];
+//	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"" ofType:@".mp3"];
 //	NSData *file = [NSData dataWithContentsOfFile:filePath];

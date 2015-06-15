@@ -16,20 +16,34 @@
 Objective-CArmyKnife/
     Controls/
       Loading/
+    CoreAnimationExtensions/
+      ConvenienceAnimation/
     CoreGraphicsExtensions/
       CGRect/
     FoundationExtensions/
+      Edit/
+      Regex/
     PublicHeaders/
     RuntimeExtensions/
       MethodSwizzConvenienceInterface/
       PrintModelProperty/
       PrintViewControllerHierarchy/
     UIKitExtensions/
+      BounceAnimation/
+      ColorfulNavigationBar/
       DataSourceCollections/
-      Frame/
+      HexStringColor/
+      ImageViewAnimation/
       LoadImage/
+      MoveCell/
       RegisterCell/
+      RotateAnimation/
+      RoundCorner/
+      ShakeAnimation/
       Tab+Navs/
+      TableViewSeparator/
+      Transform3DAnimation/
+      ViewFrame/
 ```
 
 PublicHeaders/Objective-CArmyKnife.h内包含了所有拓展头文件，可将其加入.PCH文件，省去逐一添加头文件的麻烦。
@@ -43,3 +57,8 @@ MIT许可，允许使用者自由修改与拷贝，本项目维护者不负任�
 
 ## 更新内容
 
+2015.6.15
+
+* 支持Travis CI
+* 分离NSString，为编辑（Edit）、正则（Regex）、MD5、Base64、回文字符串（Palindrome）建立独立目录
+* 调整Sample项目，简化仓库目录结构，方便synx生成物理目录
