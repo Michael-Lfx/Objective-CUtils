@@ -1,5 +1,7 @@
 # Objective-CArmyKnife
 
+![构建状态指示器](https://travis-ci.org/Michael-Lfx/Objective-CArmyKnife.svg?branch=master)
+
 收录Objective-C常用工具方法，以细颗粒度分块整理，用户自行按需添加需要的功能模块，提高生产效率。
 **人生苦短，别浪费在编写重复代码上，工程师应该做些有意义的事。当然，必须要掌握原理，我觉得iOS应用开发属于理论指导实践。**
 
