@@ -557,6 +557,7 @@
 				<string>4C30736D1B2E819200AF89E6</string>
 				<string>4C30736E1B2E819200AF89E6</string>
 				<string>4C3074151B2E912300AF89E6</string>
+				<string>4C3074191B2EB10A00AF89E6</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -2084,10 +2085,57 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Palindrome</string>
 			<key>path</key>
 			<string>Palindrome</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C3074161B2EB10400AF89E6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSDate+Week.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C3074171B2EB10400AF89E6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSDate+Week.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C3074181B2EB10400AF89E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4C3074171B2EB10400AF89E6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4C3074191B2EB10A00AF89E6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4C3074161B2EB10400AF89E6</string>
+				<string>4C3074171B2EB10400AF89E6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Week</string>
+			<key>path</key>
+			<string>Week</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2218,6 +2266,7 @@
 				<string>4C3073D11B2E819200AF89E6</string>
 				<string>4C3073CA1B2E819200AF89E6</string>
 				<string>4C3073C81B2E819200AF89E6</string>
+				<string>4C3074181B2EB10400AF89E6</string>
 				<string>4C3073431B2E817700AF89E6</string>
 				<string>4C3073B41B2E819200AF89E6</string>
 				<string>4C3074141B2E90DD00AF89E6</string>
