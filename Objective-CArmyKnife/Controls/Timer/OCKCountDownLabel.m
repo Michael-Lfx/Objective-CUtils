@@ -6,10 +6,10 @@
 //  Copyright (c) 2015年 wendong wang. All rights reserved.
 //
 
-#import "WMCountDownLabel.h"
+#import "OCKCountDownLabel.h"
 #import "AppDelegate.h"
 
-@interface WMCountDownLabel()
+@interface OCKCountDownLabel()
 
 @property (nonatomic) NSInteger seconds;
 
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation WMCountDownLabel
+@implementation OCKCountDownLabel
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -160,16 +160,16 @@
     
     NSInteger min = seconds / 60;
     if (min < 10) {
-        minString = [NSString stringWithFormat:@"0%d", min];
+        minString = [NSString stringWithFormat:@"0%zi", min];
     } else {
-        minString = [NSString stringWithFormat:@"%d", min];
+        minString = [NSString stringWithFormat:@"%zi", min];
     }
     
     NSInteger second = seconds % 60;
     if (second < 10) {
-        secondString = [NSString stringWithFormat:@"0%d", second];
+        secondString = [NSString stringWithFormat:@"0%zi", second];
     } else {
-        secondString = [NSString stringWithFormat:@"%d", second];
+        secondString = [NSString stringWithFormat:@"%zi", second];
     }
     
     NSString* time = [NSString stringWithFormat:@"%@ : %@", minString, secondString];

@@ -15,7 +15,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol WMCountDownLabelDelegate <NSObject>
+@protocol OCKCountDownLabelDelegate <NSObject>
 
 @optional
 
@@ -33,9 +33,9 @@
 
 @end
 
-@interface WMCountDownLabel : UILabel
+@interface OCKCountDownLabel : UILabel
 
-@property (weak, nonatomic) id<WMCountDownLabelDelegate> delegate;
+@property (weak, nonatomic) id<OCKCountDownLabelDelegate> delegate;
 
 /**
  * @brief 设置倒计时的倒计时间, 建议在未 start 的情况下设置

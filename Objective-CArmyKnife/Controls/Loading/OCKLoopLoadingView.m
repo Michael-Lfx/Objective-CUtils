@@ -1,6 +1,6 @@
-#import "LoopLoadingView.h"
+#import "OCKLoopLoadingView.h"
 
-@interface LoopLoadingView ()
+@interface OCKLoopLoadingView ()
 
 /**
  *  外圈旋转图标
@@ -39,7 +39,7 @@
 
 @end
 
-@implementation LoopLoadingView
+@implementation OCKLoopLoadingView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

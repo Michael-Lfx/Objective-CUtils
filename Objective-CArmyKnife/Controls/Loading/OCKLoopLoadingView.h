@@ -5,7 +5,7 @@
  *
  *  建议使用场合：加载数据等无预计时间的等待画面
  */
-@interface LoopLoadingView : UIView
+@interface OCKLoopLoadingView : UIView
 
 /**
  *  是否正在加载
