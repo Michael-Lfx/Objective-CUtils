@@ -7,13 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "LoopLoadingView.h"
+#import "OCKLoopLoadingView.h"
 #import "NavigationBar+Colorful.h"
 #import "UIView+BounceAnimation.h"
 
 @interface ViewController ()
 
-@property (strong, nonatomic) LoopLoadingView *loadingView;
+@property (strong, nonatomic) OCKLoopLoadingView *loadingView;
 @property (weak, nonatomic) IBOutlet UIView *viewForBounceAnimation;
 @property (strong, nonatomic) NSString *hello;
 
@@ -25,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    LoopLoadingView *loading = [[LoopLoadingView alloc] initWithFrame:CGRectMake(50, 100, 100, 100)];
+    OCKLoopLoadingView *loading = [[OCKLoopLoadingView alloc] initWithFrame:CGRectMake(50, 100, 100, 100)];
     [self.view addSubview:loading];
     self.loadingView = loading;
     

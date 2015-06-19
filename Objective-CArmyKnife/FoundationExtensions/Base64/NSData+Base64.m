@@ -1,12 +1,12 @@
 //
-//  NSString+Base64.m
+//  NSData+Base64.m
 //  Objective-CArmyKnifeExample
 //
 //  Created by Michael on 6/15/15.
 //  Copyright (c) 2015 Michael-lfx. All rights reserved.
 //
 
-#import "NSString+Base64.h"
+#import "NSData+Base64.h"
 
 static char base64EncodingTable[64] = {
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
@@ -15,9 +15,9 @@ static char base64EncodingTable[64] = {
     'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '/'
 };
 
-@implementation NSString (Base64)
+@implementation NSData (Base64)
 
-+ (NSString *)base64StringFromData:(NSData *)data length:(int)length {
+- (NSString *)base64String {
     unsigned long ixtext, lentext;
     long ctremaining;
     unsigned char input[3], output[4];
@@ -25,12 +25,12 @@ static char base64EncodingTable[64] = {
     const unsigned char *raw;
     NSMutableString *result;
     
-    lentext = [data length];
+    lentext = self.length;
     if (lentext < 1) {
         return @"";
     }
     result = [NSMutableString stringWithCapacity: lentext];
-    raw = [data bytes];
+    raw = [self bytes];
     ixtext = 0;
     
     while (true) {
@@ -72,7 +72,7 @@ static char base64EncodingTable[64] = {
         ixtext += 3;
         charsonline += 4;
         
-        if ((length > 0) && (charsonline >= length)) {
+        if ((self.length > 0) && (charsonline >= self.length)) {
             charsonline = 0;
         }
     }
