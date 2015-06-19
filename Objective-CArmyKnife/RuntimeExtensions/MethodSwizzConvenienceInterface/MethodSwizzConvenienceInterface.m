@@ -26,7 +26,7 @@ inline BOOL swizzInstanceMethod(Class cls, SEL srcSelector, SEL dstSelector) {
 inline BOOL swizzClassMethod(Class cls, SEL srcSelector, SEL dstSelector) {
     Method srcMethod = class_getClassMethod(cls, srcSelector);
     Method dstMethod = class_getClassMethod(cls, dstSelector);
-    return trySwizz(cls, srcSelector, dstSelector, srcMethod, dstMethod);
+    return trySwizz(objc_getMetaClass(class_getName(cls)), srcSelector, dstSelector, srcMethod, dstMethod);
 }
 
 inline BOOL trySwizz(Class cls, SEL srcSelector, SEL dstSelector, Method srcMethod, Method dstMethod) {
